@@ -77,3 +77,7 @@ It records all system sound while the meeting runs, notification sounds included
 ## Settings
 
 Notes folder, microphone, call audio (`system`, `device` or `off`), call audio device, Whisper model, spoken language (`auto`, `de`, `en`, ...), summary model (`sonnet` by default) and Keep audio are rows in `/config` under meeting-notes.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

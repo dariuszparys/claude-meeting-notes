@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "macOS only: take timestamped meeting notes in a pane, optionally record your mic and the call's audio, and get a local transcript and a summary when you stop.",
   "author": { "name": "Dariusz Parys" },
+  "license": "MIT",
   "repository": "https://github.com/dariuszparys/claude-meeting-notes",
   "keywords": ["meeting", "notes", "transcription", "summary", "macos"],
   "types": "./types/index.d.ts",
