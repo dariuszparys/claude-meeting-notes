@@ -1,0 +1,60 @@
+{
+  "name": "meeting-notes",
+  "version": "0.1.0",
+  "description": "macOS only: take timestamped meeting notes in a pane, optionally record your mic and the call's audio, and get a local transcript and a summary when you stop.",
+  "author": { "name": "Dariusz Parys" },
+  "repository": "https://github.com/dariuszparys/claude-meeting-notes",
+  "keywords": ["meeting", "notes", "transcription", "summary", "macos"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "notesDir": {
+      "type": "string",
+      "title": "Notes folder",
+      "description": "Where each meeting gets its own folder; ~ is your home folder.",
+      "default": "~/Documents/Meeting Notes"
+    },
+    "micDevice": {
+      "type": "string",
+      "title": "Microphone",
+      "description": "Audio input name as macOS lists it; \"default\" follows the system input.",
+      "default": "default"
+    },
+    "callAudio": {
+      "type": "string",
+      "title": "Call audio",
+      "description": "system records everything the Mac plays through the built-in helper; device records the loopback input named below; off records the microphone only.",
+      "options": ["system", "device", "off"],
+      "default": "system"
+    },
+    "meetingDevice": {
+      "type": "string",
+      "title": "Call audio device",
+      "description": "Loopback input used when Call audio is device, such as \"BlackHole 2ch\".",
+      "default": "BlackHole 2ch"
+    },
+    "whisperModel": {
+      "type": "string",
+      "title": "Whisper model",
+      "description": "Path to the whisper.cpp ggml model used for the transcript.",
+      "default": "~/.cache/whisper/ggml-large-v3-turbo-q5_0.bin"
+    },
+    "language": {
+      "type": "string",
+      "title": "Spoken language",
+      "description": "Whisper language code such as de or en, or auto to detect it.",
+      "default": "auto"
+    },
+    "summaryModel": {
+      "type": "string",
+      "title": "Summary model",
+      "description": "Model alias or id that writes the summary.",
+      "default": "sonnet"
+    },
+    "keepAudio": {
+      "type": "boolean",
+      "title": "Keep audio",
+      "description": "Keep the recording as audio.m4a beside the notes.",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "claude-meeting-notes",
+  "description": "A Claude Code mod for meeting notes, recording and summaries on macOS.",
+  "owner": { "name": "Dariusz Parys" },
+  "plugins": [
+    {
+      "name": "meeting-notes",
+      "source": "./",
+      "description": "macOS only: meeting notes in a pane, mic and call recording, a local transcript and a summary."
+    }
+  ]
+}
